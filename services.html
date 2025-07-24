@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+                fontSize: {
+                        'headings': '1.75rem',
+                        'body1': '1.375rem',
+                        'body2': '1.5rem',
+                },
+                fontFamily: {
+                    roboto: ['Roboto', 'sans-serif'],
+                },
+                colors: {
+                    grassgreen: '#2A7A1B',
+                    softgrey: '#F6F4F4',
+                }
+            }
+        }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class=" text-headings flex items-center justify-between px-6 py-4 bg-white">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+            <img src="/logo.svg" alt="Logo" class="h-8 w-auto">
+            <div class="flex flex-col item-center text-center">
+                <span class="text-headings font-roboto text-green-700">NORTH TEXAS</span>
+                <span class="text-headings font-roboto font-black text-black-700">DIGITAL IMAGING</span>
+            </div>
+        </div>
+
+        <!-- Nav Links -->
+        <ul class="hidden md:flex font-roboto space-x-6 text-black-700 font-medium">
+            <li><a href="index.html" class="hover:text-green-700">Home</a></li>
+            <li><a href="about.html" class="hover:text-green-700">About</a></li>
+            <li><a href="services.html" class="hover:text-green-700">Services</a></li>
+            <li><a href="technology.html" class="hover:text-green-700">Technology</a></li>
+            <li><a href="patients.html" class="hover:text-green-700">Patients</a></li>
+            <li><a href="contact.html" class="hover:text-green-700">Contact Us</a></li>
+        </ul>
+
+        <!-- Call Button -->
+        <a href="tel:9726814000" class="ml-4 inline-block bg-green-700 text-white font-semibold px-4 py-2 rounded-lg hover:bg-green-800 transition">
+            (972) 681-4000
+        </a>
+        
+    </nav>
+
+<hr class="border-3 border-green-700 mb-8">
+
+<!-- Breadcrumb -->
+<div class="flex items-center space-x-2 text-headings font-bold text-black-700 px-6">
+  <!-- Home Icon -->
+  <img src="icons/home.svg" alt="Home" class="h-6 w-6">
+  <span class="font-black text-2xl">&gt;</span> <!-- or use a right arrow icon -->
+  <span>Services</span>
+</div>
+
+</body>
+</html>
