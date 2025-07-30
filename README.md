@@ -1,6 +1,8 @@
 # TTB-WTV-Website-Revamp-Project
 This repository serves as the codebase for the WTV Website Revamp project in partnership with Tech Talent Boost
 
+GitHub Pages (Main branch) preview: https://mroliverw.github.io/TTB-WTV-Website-Revamp-Project/
+
 WTV Website Revamp Project Scope
 Current website: https://ntdimaging.com/
 Figma redesign: https://www.figma.com/design/70D8EpaVMNKHWRMIxc652k/NTDI_FinalBrochure?node-id=159-582
