@@ -1,13 +1,15 @@
+@import "tailwindcss";
+
 @theme {
   --font-size-headings: 1.75rem;
   --font-size-body1: 1.375rem;
   --font-size-body2: 1.5rem;
 
   --font-family-roboto: 'Roboto', sans-serif;
-  --font-family-sans: var(--font-family-roboto);
+  --font-sans: var(--font-family-roboto);
 
   --color-grassgreen: #2A7A1B;
   --color-softgrey: #F6F4F4;
 }
 
-@import "tailwindcss";
+
