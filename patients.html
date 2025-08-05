@@ -65,96 +65,118 @@
     <span>Patients</span>
     </div>
 
-    <!-- Top Title Section -->
-    <div class="flex justify-center px-6 pt-10">
-    <div class="max-w-[1280px] w-full">
-        <h1 class="text-headings font-bold text-black mb-4">
-        Diagnostic Imaging Services You Can Trust
-        </h1>
-        <p class="text-gray-700">
-        At North Texas Digital Imaging, we offer fast, accurate, and affordable diagnostic services with patient comfort and convenience at the center. Our board-certified radiologists provide high-quality imaging with same-day appointment availability and exam reports returned in 24 hours or less. With easy online access for physicians, competitive cash pricing, and flexible payment options.
-        </p>
-    </div>
-    </div>
 
-    <!-- Responsive 2-column layout using flex with custom media query -->
-    <div class="flex flex-col [@media(min-width:1284px)]:flex-row gap-y-6 [@media(min-width:1284px)]:gap-x-[80px] px-6 justify-center pt-10">
-    <!-- Column 1 -->
-    <div class="flex flex-col gap-6 w-[598px]">
-        <!-- CT Scan -->
-        <div>
-        <div class="relative w-[598px] h-[335px] overflow-hidden">
-            <img src="images/ct_scan.jpg" alt="CT Scan"
-                class="absolute top-0 left-0 w-full h-full object-cover">
-            <div class="absolute bottom-0 w-full h-[63px] bg-green-700 text-white text-headings font-semibold px-4 flex items-center">
-            CT Scan
-            </div>
-        </div>
-        <p class="mt-2 text-black text-base max-w-[598px]">
-            This imaging test provides clear, cross-sectional views of the body to detect internal injuries, illnesses, or abnormalities.
-        </p>
-        </div>
+<main class="flex flex-col items-center bg-white text-gray-800 w-full px-4">
+  <!-- Banner Image -->
+  <div
+    class="w-full max-w-[1442px] h-[394px] bg-[url('images/patients_hero.jpg')] bg-center bg-cover bg-no-repeat mb-10"
+    role="img"
+    aria-label="Patients Banner"
+  ></div>
 
-        <!-- MRI -->
-        <div>
-        <div class="relative w-[598px] h-[335px] overflow-hidden">
-            <img src="images/mri.jpg" alt="MRI"
-                class="absolute top-0 left-0 w-full h-full object-cover">
-            <div class="absolute bottom-0 w-full h-[63px] bg-green-700 text-white text-headings font-semibold px-4 flex items-center">
-            MRI
-            </div>
-        </div>
-        <p class="mt-2 text-black text-base max-w-[598px]">
-            This scan uses magnetic fields and radio waves to create detailed images of soft tissues, joints, and organs—without radiation.
-        </p>
-        </div>
+  <!-- Content Wrapper -->
+  <div class="w-full max-w-4xl">
 
-        <!-- X-RAY -->
-        <div>
-        <div class="relative w-[598px] h-[335px] overflow-hidden">
-            <img src="images/xray.jpg" alt="X-RAY"
-                class="absolute top-0 left-0 w-full h-full object-cover">
-            <div class="absolute bottom-0 w-full h-[63px] bg-green-700 text-white text-headings font-semibold px-4 flex items-center">
-            X-RAY
-            </div>
-        </div>
-        <p class="mt-2 text-black text-base max-w-[598px]">
-            An X-ray scan is a medical imaging technique used to view the inside of the body, helping to diagnose injuries, infections, or conditions affecting bones and tissues.
-        </p>
-        </div>
+    <!-- Row 1: CareCloud Title -->
+    <h1 class="text-4xl font-bold mt-10 mb-4">CareCloud</h1>
+
+    <!-- Row 2: Portal Description -->
+    <div>
+      <h2 class="text-xl font-semibold mb-2"></h2>
+      <p class="mb-2">
+        Your health information is now available in MyCare — our advanced patient portal!
+      </p>
+      <p>
+        MyCare offers secure, 24/7 access to your personal health records in one convenient place.
+        From test results to appointment details, everything you need is at your fingertips in a unified electronic medical record.
+      </p>
     </div>
 
-    <!-- Column 2 -->
-    <div class="flex flex-col gap-6 w-[598px]">
-        <!-- DEXA Bone Densitometry -->
-        <div>
-        <div class="relative w-[598px] h-[335px] overflow-hidden">
-            <img src="images/dexa_scan.jpg" alt="DEXA Bone Densitometry"
-                class="absolute top-0 left-0 w-full h-full object-cover">
-            <div class="absolute bottom-0 w-full h-[63px] bg-green-700 text-white text-headings font-semibold px-4 flex items-center">
-            DEXA Bone Densitometry
-            </div>
-        </div>
-        <p class="mt-2 text-black text-base max-w-[598px]">
-            This quick, low-dose X-ray measures bone strength and helps detect osteoporosis or risk of fractures.
-        </p>
-        </div>
-
-        <!-- Ultrasound -->
-        <div>
-        <div class="relative w-[598px] h-[335px] overflow-hidden">
-            <img src="images/ultrasound.jpg" alt="Ultrasound"
-                class="absolute top-0 left-0 w-full h-full object-cover">
-            <div class="absolute bottom-0 w-full h-[63px] bg-green-700 text-white text-headings font-semibold px-4 flex items-center">
-            Ultrasound
-            </div>
-        </div>
-        <p class="mt-2 text-black text-base max-w-[598px]">
-            A safe, radiation-free test that uses sound waves to capture real-time images of organs, blood flow, and soft tissues.
-        </p>
-        </div>
-    </div>
+    <!-- Row 3: Buttons -->
+    <div class="flex flex-wrap gap-4 mt-6">
+      <a href="https://carecloud.com/app/" target="_blank" rel="noopener noreferrer"
+         class="bg-green-700 text-white px-6 py-2 rounded hover:bg-green-800">
+        New Patient
+      </a>
+      <a href="https://carecloud.com/app/" target="_blank" rel="noopener noreferrer"
+         class="bg-green-700 text-white px-6 py-2 rounded hover:bg-green-800">
+        Existing Patient
+      </a>
     </div>
 
+      <!-- Row 4: What is CareCloud? -->
+      <h2 class="text-2xl font-bold mt-10">What is CareCloud?</h2>
+
+      <!-- Row 5: Features -->
+      <div class="mt-2 max-w-4xl">
+        <p class="mb-2">
+          CareCloud offers patients personalized and secure online access to portions of their medical records.
+          It allows you to safely use the internet to manage and receive important health information.
+        </p>
+        <p class="mb-2">With CareCloud, you can:</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Request medical appointments</li>
+          <li>View your health summary</li>
+          <li>Access test results</li>
+          <li>Request prescription renewals</li>
+          <li>Communicate electronically and securely with your care team</li>
+        </ul>
+      </div>
+
+      <!-- Row 6: Is there a fee? -->
+      <h2 class="text-2xl font-bold mt-10">Is there a fee?</h2>
+
+      <!-- Row 7: Free Service -->
+      <div class="mt-2 max-w-4xl">
+        <p>CareCloud is a free service offered to our patients.</p>
+      </div>
+
+      <!-- Row 8: Questions -->
+      <h2 class="text-2xl font-bold mt-10">Have Questions About CareCloud? We’re Here to Help.</h2>
+
+      <!-- Row 9: Contact Info -->
+      <div class="mt-2 max-w-4xl">
+        <p>
+          <strong>Whom do I contact if I have further questions?</strong><br />
+          If you have technical questions about using CareCloud, please contact our support team at
+          <a href="mailto:patient-first@ntdimaging.com" class="text-green-600 underline">patient-first@ntdimaging.com</a>
+          or call NTDI Patient Support at <a href="tel:9726814000" class="text-green-600 underline">972-681-4000</a>.
+        </p>
+        <p class="mt-2">
+          For questions about your medical records or care, please reach out directly to your provider’s office.
+          You can also use CareCloud’s secure messaging feature for non-urgent communication with your care team.
+        </p>
+      </div>
+
+      <!-- Row 10: What to Know -->
+      <h2 class="text-2xl font-bold mt-10">What to Know Before Your Appointment</h2>
+
+      <!-- Row 11: Prep Text -->
+      <div class="mt-2 max-w-4xl">
+        <p>
+          We are glad that you have chosen to visit our website and choose our facility for your tests.
+          Click on the following links to print out the required documents for your visit. Bring these documents and your prescription
+          with you, as well as your insurance card and photo ID.
+        </p>
+      </div>
+
+      <!-- Rows 12-14: PDFs -->
+      <div class="mt-6 max-w-4xl space-y-4">
+        <a href="docs/patient_paperwork.pdf" download class="flex items-center text-green-700 hover:underline">
+          <img src="icons/pdf_icon.gif" alt="PDF" class="w-6 h-6 mr-2" />
+          Please Download the Patient Paperwork to bring to your first appointment.
+        </a>
+        <a href="docs/mri_patient_form.pdf" download class="flex items-center text-green-700 hover:underline">
+          <img src="icons/pdf_icon.gif" alt="PDF" class="w-6 h-6 mr-2" />
+          Download MRI Patient Form.
+        </a>
+        <a href="docs/partial_insurance_list.pdf" download class="flex items-center text-green-700 hover:underline">
+          <img src="icons/pdf_icon.gif" alt="PDF" class="w-6 h-6 mr-2" />
+          Partial list of our Insurance and Networks accepted by our radiologist.
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
 </body>
 </html>
