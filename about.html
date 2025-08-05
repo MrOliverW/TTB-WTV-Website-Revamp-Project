@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Google Fonts for Roboto -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                    fontSize: {
+                            'headings': '1.75rem',
+                            'body1': '1.375rem',
+                            'body2': '1.5rem',
+                    },
+                    fontFamily: {
+                        roboto: ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        grassgreen: '#2A7A1B',
+                        softgrey: '#F6F4F4',
+                    }
+                }
+            }
+            }
+        </script>
+        
+        <title>About Us - North Texas Digital Imaging</title>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="text-headings flex items-center justify-between px-6 py-4 bg-white">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="flex flex-col item-center text-center">
+                    <span class="text-headings font-roboto text-grassgreen">NORTH TEXAS</span>
+                    <span class="text-headings font-roboto font-black text-black">DIGITAL IMAGING</span>
+                </div>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="hidden md:flex font-roboto space-x-6 text-black font-medium">
+                <li><a href="index.html" class="hover:text-grassgreen">Home</a></li>
+                <li><a href="about.html" class="hover:text-grassgreen text-grassgreen font-bold">About</a></li>
+                <li><a href="services.html" class="hover:text-grassgreen">Services</a></li>
+                <li><a href="technology.html" class="hover:text-grassgreen">Technology</a></li>
+                <li><a href="patients.html" class="hover:text-grassgreen">Patients</a></li>
+                <li><a href="contact.html" class="hover:text-grassgreen">Contact Us</a></li>
+            </ul>
+            
+            <!-- Call Button -->
+            <a href="tel:9726814000" class="ml-4 inline-block bg-grassgreen text-white font-semibold px-4 py-2 rounded-lg hover:bg-green-800 transition">
+                (972) 681-4000
+            </a>
+        </nav>
+        
+        <!-- Green Line Under Navigation -->
+        <hr class="border-3 border-grassgreen mb-8">
+        
+        
+        <!-- Breadcrumb -->
+    <div class="flex items-center space-x-2 text-headings font-bold text-black px-6 mb-8">
+        <img src="icons/home.svg" alt="Home" class="h-6 w-6">
+        <span class="font-black text-2xl">&gt;</span>
+        <span>About</span>
+    </div>
+    
+    <!-- Hero Section - Our Story -->
+<section class="bg-softgrey py-16">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+            <!-- Left side - Image -->
+            <div>
+                <img src="images/pic1abt.png" alt="Doctor consulting with patient" style="width: 663px; height: 536px;" class="object-cover">
+            </div>
+            
+            <!-- Right side - Text content -->
+            <div>
+                <h1 class="font-roboto font-bold text-black mb-6" style="font-size: 28px; line-height: 100%; letter-spacing: -0.35px;">Our Story</h1>
+                <div style="width: 639px; height: 494px;">
+                    <p class="font-roboto text-black mb-6" style="font-size: 22px; line-height: 100%; letter-spacing: -0.35px; font-weight: 400;">
+                        North Texas Digital Imaging (NTDI) has proudly served Forney and the surrounding communities since 2007. Originally established as Forney Diagnostic Imaging, the practice relocated to Mesquite in 2010 to better accommodate our growing network of physicians and patients. Today, we continue to expand our reach while staying committed to delivering high-quality, patient-centered radiological services.
+                    </p>
+                    <p class="font-roboto text-black mb-6" style="font-size: 22px; line-height: 100%; letter-spacing: -0.35px; font-weight: 400;">
+                        Our experienced team of compassionate professionals is dedicated to providing advanced diagnostic imaging using state-of-the-art technology. We are proud to have a staff of Board Certified radiologists and nationally registered technologists, many of whom hold advanced credentials in multiple specialties. Each member of our technical staff has received extensive training in both equipment operation and imaging protocols to ensure accuracy, safety, and comfort with every procedure.
+                    </p>
+                    <p class="font-roboto text-black" style="font-size: 22px; line-height: 100%; letter-spacing: -0.35px; font-weight: 400;">
+                        At NTDI, we combine clinical excellence with a personal approach—because your health deserves both precision and care.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Our Staff and Radiologists Section -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="font-roboto font-bold text-black text-left mb-12" style="font-size: 28px; line-height: 100%; letter-spacing: -0.35px;">Our Staff and Radiologist</h2>
+        
+        <!-- Staff Grid - 2x2 layout with green headers -->
+        <div class="grid md:grid-cols-2 gap-6">
+            
+            <!-- Mathew Thomas -->
+            <div class="bg-white overflow-hidden">
+                <div class="px-6 py-4" style="background: #287A1B; width: 598px; height: 63px; display: flex; align-items: center;">
+                    <h3 class="font-roboto font-bold text-white" style="font-size: 28px; line-height: 100%; letter-spacing: -0.35px;">Mathew Thomas BSRT, (R)</h3>
+                </div>
+                <div class="p-6 bg-white">
+                    <p class="text-sm text-black leading-relaxed">
+                        Mathew Thomas, is a registered radiologic technologist who additionally holds a Bachelor of Science degree. He always keeps the patients care and comfort in mind while obtaining quality diagnostic studies. Mathew also has 20+ years of experience.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Binu M Mathew -->
+            <div class="bg-white overflow-hidden">
+                <div class="px-6 py-4" style="background: #287A1B; width: 598px; height: 63px; display: flex; align-items: center;">
+                    <h3 class="font-roboto font-bold text-white" style="font-size: 28px; line-height: 100%; letter-spacing: -0.35px;">Binu M Mathew, RT,(ARRT)(MRI)</h3>
+                </div>
+                <div class="p-6 bg-white">
+                    <p class="text-sm text-black leading-relaxed">
+                        Binu M Mathew is a registered radiologic technologist who additionally holds a Bachelor of Business Administration. He completed his radiologic training at Baylor University Medical Center Dallas. He always keeps patientcare and comfort in mind while obtaining quality diagnostic studies. Binu also has 13+ years of experience.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Dr. Rehbi Awad -->
+            <div class="bg-white overflow-hidden">
+                <div class="px-6 py-4" style="background: #287A1B; width: 598px; height: 63px; display: flex; align-items: center;">
+                    <h3 class="font-roboto font-bold text-white" style="font-size: 28px; line-height: 100%; letter-spacing: -0.35px;">Dr. Rehbi Awad, M.D</h3>
+                </div>
+                <div class="p-6 bg-white">
+                    <p class="text-sm text-black leading-relaxed">
+                        One of our radiologists is Dr. Rehbi Awad, M.D. He has been a board certified radiologist since 1989. He completed residency training at New England Deaconess Hospital, Dr. Awad also completed Fellowships from Harvard Medical School in Ultrasound, MRI, CT, and Interventional Radiology New England Medical Center, Tufts University, Boston from 1989-1991. Dr. Awad has enjoyed 17 years of practice in the great state of Texas. We are proud to have Dr. Awad as a member of our staff.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Dr. Soloman Martin Bierman -->
+            <div class="bg-white overflow-hidden">
+                <div class="px-6 py-4" style="background: #287A1B; width: 598px; height: 63px; display: flex; align-items: center;">
+                    <h3 class="font-roboto font-bold text-white" style="font-size: 28px; line-height: 100%; letter-spacing: -0.35px;">Dr. Soloman Martin Bierman, M.D</h3>
+                </div>
+                <div class="p-6 bg-white">
+                    <p class="text-sm text-black leading-relaxed">
+                        Another radiologist at NTDI is Dr. Soloman Martin Bierman, M.D. He has been a board certified radiologist since 1992. He attended medical school at Univ. of Rochester School of Medicine in, Rochester, NY, and he completed residency training at University of Massachusetts Medical Center, Worchester MA. Dr. Bierman has enjoyed 7+ years of practice in the great state of Texas. We are also pleased to have Dr. Bierman as a member of our staff.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
