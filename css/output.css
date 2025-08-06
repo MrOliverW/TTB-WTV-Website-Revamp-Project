@@ -345,6 +345,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\/images\/homepage_hero\.jpg\)\] {
+    background-image: url(/images/homepage_hero.jpg);
+  }
   .object-contain {
     object-fit: contain;
   }
