@@ -27,6 +27,7 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-size-headings: 1.75rem;
+    --font-size-body1: 1.375rem;
     --font-family-roboto: 'Roboto', sans-serif;
     --color-grassgreen: #2A7A1B;
     --color-softgrey: #F6F4F4;
@@ -235,8 +236,14 @@
   .h-40 {
     height: calc(var(--spacing) * 40);
   }
+  .h-74 {
+    height: calc(var(--spacing) * 74);
+  }
   .h-\[61px\] {
     height: 61px;
+  }
+  .h-\[74px\] {
+    height: 74px;
   }
   .h-full {
     height: 100%;
@@ -252,6 +259,12 @@
   }
   .max-w-7xl {
     max-width: var(--container-7xl);
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -302,6 +315,10 @@
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-3 {
     border-style: var(--tw-border-style);
@@ -369,9 +386,27 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
+  .text-\(length\:--font-size-body1\) {
+    font-size: var(--font-size-body1);
+  }
+  .text-\[22px\] {
+    font-size: 22px;
+  }
+  .leading-\[37\] {
+    --tw-leading: 37;
+    line-height: 37;
+  }
+  .leading-\[37px\] {
+    --tw-leading: 37px;
+    line-height: 37px;
+  }
   .leading-\[61px\] {
     --tw-leading: 61px;
     line-height: 61px;
+  }
+  .leading-\[74px\] {
+    --tw-leading: 74px;
+    line-height: 74px;
   }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
@@ -408,8 +443,15 @@
   .text-white {
     color: var(--color-white);
   }
+  .italic {
+    font-style: italic;
+  }
   .underline {
     text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
@@ -486,6 +528,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -493,6 +540,7 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
