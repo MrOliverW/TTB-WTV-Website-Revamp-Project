@@ -24,6 +24,7 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-black: 900;
+    --leading-normal: 1.5;
     --leading-relaxed: 1.625;
     --radius-lg: 0.5rem;
     --default-transition-duration: 150ms;
@@ -545,6 +546,10 @@
     --tw-leading: 74px;
     line-height: 74px;
   }
+  .leading-normal {
+    --tw-leading: var(--leading-normal);
+    line-height: var(--leading-normal);
+  }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
     line-height: var(--leading-relaxed);
@@ -629,6 +634,12 @@
   .sm\:text-left {
     @media (width >= 40rem) {
       text-align: left;
+    }
+  }
+  .sm\:leading-\[61px\] {
+    @media (width >= 40rem) {
+      --tw-leading: 61px;
+      line-height: 61px;
     }
   }
   .md\:flex {
