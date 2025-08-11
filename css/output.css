@@ -639,6 +639,22 @@
       height: calc(var(--spacing) * 52);
     }
   }
+  .sm\:pl-\[25px\] {
+    @media (width >= 40rem) {
+      padding-left: 25px;
+    }
+  }
+  .sm\:text-left {
+    @media (width >= 40rem) {
+      text-align: left;
+    }
+  }
+  .sm\:leading-\[61px\] {
+    @media (width >= 40rem) {
+      --tw-leading: 61px;
+      line-height: 61px;
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
