@@ -1,0 +1,79 @@
+/* #form1 .cog-page__navigation {
+  justify-content: center;
+  background-color: #fff;
+}
+
+#form1 .cog-abuse {
+  background-color: #fff;
+}
+
+#form1 .cog-branding {
+  background-color: #fff;
+}
+
+
+#form1 .cog-form__container {
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#form1 .cog-form__content {
+  padding: 30px;
+  width: 100%;
+  background-color: #2A7A1B;
+}
+
+#form1 .cog-row {
+  background-color: #fff;
+  padding: 0 30px 0 30px;
+  
+}
+
+#form1 .cog-input { */
+  /* width: 75%; */
+  /* justify-content: center;
+}
+
+#form1 .cog-field--1 {
+  padding-top: 40px;
+}
+
+#form1 .cog-field--2 {
+  padding-top: 40px;
+}
+
+#form1 .cog-button {
+  width: 110px;
+} */
+
+
+
+#form1 .cog-body {
+  margin-top: -10px;
+}
+
+#form1 .cog-form__content {
+  padding: 30px;
+  background-color: #2A7A1B;
+}
+
+#form1 .cog-page {
+  background-color: #fff;
+  padding: 60px;
+}
+
+#form1 .cog-page__navigation {
+  justify-content: center;
+}
+
+#form1 .el-button {
+  position: absolute;
+  width: 160px;
+}
+
+#form1 .cog-abuse {
+  display: none;
+}
