@@ -102,7 +102,7 @@
   }
 
   #form1 .cog-col--12 {
-    flex: 0 0 42%; /* Adjust width to fit two columns with a small gap */
+    flex: 0 0 46%; /* Adjust width to fit two columns with a small gap */
   }
 }
 
