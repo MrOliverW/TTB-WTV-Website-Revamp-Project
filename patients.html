@@ -1,120 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontSize: {
-                            'headings': '1.75rem',
-                            'body1': '1.375rem',
-                            'body2': '1.5rem',
-                    },
-                    fontFamily: {
-                        roboto: ['Roboto', 'sans-serif'],
-                    },
-                    colors: {
-                        grassgreen: '#2A7A1B',
-                        softgrey: '#F6F4F4',
-                    }
-                }
-            }
-        }
-    </script>
-    <title>Patients</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts: Roboto -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Tailwind CSS output -->
+  <link href="./css/output.css" rel="stylesheet" />
+
+  <title>Patients</title>
 </head>
-<body>
-    <nav class=" text-body2 flex items-center justify-between px-6 py-4 bg-white">
-        <!-- Logo -->
-        <div class="flex items-center space-x-2">
-            <img src="images/ntdi_logo.png" alt="Logo" class="h-8 w-auto">
-            <div class="flex flex-col item-center text-center">
-                <span class="text-body2 font-roboto text-green-700">NORTH TEXAS</span>
-                <span class="text-body2 font-roboto font-black text-black-700">DIGITAL IMAGING</span>
-            </div>
+<body class="font-roboto bg-white text-black">
+
+  <!-- NAVIGATION -->
+  <nav class="bg-white py-4">
+    <div class="nav-container max-w-[1360px] mx-auto flex items-center justify-between px-5">
+      <!-- Logo Section -->
+      <div class="flex items-center gap-4">
+        <img src="images/ntdi_logo.png" alt="Logo" class="logo-img h-12 w-auto" />
+        <div class="flex flex-col justify-center -ml-5">
+          <span class="logo-text text-body1 font-roboto text-grassgreen -mb-1">NORTH TEXAS</span>
+          <span class="logo-text text-body1 font-roboto font-black text-black -mt-1">DIGITAL IMAGING</span>
         </div>
+      </div>
 
-        <!-- Nav Links -->
-        <ul class="hidden md:flex font-roboto space-x-6 text-black-700 font-medium">
-            <li><a href="index.html" class="hover:text-green-700">Home</a></li>
-            <li><a href="about.html" class="hover:text-green-700">About</a></li>
-            <li><a href="services.html" class="hover:text-green-700">Services</a></li>
-            <li><a href="technology.html" class="hover:text-green-700">Technology</a></li>
-            <li><a href="patients.html" class="hover:text-green-700">Patients</a></li>
-            <li><a href="contact.html" class="hover:text-green-700">Contact Us</a></li>
-        </ul>
+      <!-- Navigation Links -->
+      <ul class="nav-links hidden md:flex font-medium text-body1 text-black space-x-6">
+        <li><a href="index.html" class="hover:text-grassgreen">Home</a></li>
+        <li><a href="about.html" class="hover:text-grassgreen">About</a></li>
+        <li><a href="services.html" class="hover:text-grassgreen">Services</a></li>
+        <li><a href="technology.html" class="hover:text-grassgreen">Technology</a></li>
+        <li><a href="patients.html" class="hover:text-grassgreen">Patients</a></li>
+        <li><a href="contact.html" class="hover:text-grassgreen">Contact Us</a></li>
+      </ul>
 
-        <!-- Call Button -->
-        <a href="tel:9726814000" class="ml-4 inline-block bg-green-700 text-white font-semibold px-4 py-2 rounded-lg hover:bg-green-800 transition">
-            (972) 681-4000
-        </a>
-        
-    </nav>
+      <!-- Call Button -->
+      <a href="tel:9726814000" class="bg-grassgreen text-white font-semibold px-4 py-2 rounded-lg hover:bg-grassgreen transition text-body1">
+        (972) 681-4000
+      </a>
+    </div>
+  </nav>
 
-    <hr class="border-3 border-green-700 mb-8">
+  <!-- Divider -->
+  <hr class="border-3 border-grassgreen mb-8" />
 
-    <!-- Breadcrumb -->
-    <div class="flex items-center space-x-2 text-body2 font-bold text-black-700 px-6">
-    <!-- Home Icon -->
-    <img src="icons/home.svg" alt="Home" class="h-6 w-6">
+  <!-- Breadcrumb -->
+  <div class="max-w-[1360px] mx-auto flex items-center space-x-2 text-body1 font-medium text-black px-6 mb-10">
+    <img src="icons/home.svg" alt="Home" class="h-6 w-6" />
     <span class="font-black text-2xl">&gt;</span>
     <span>Patients</span>
-    </div>
+  </div>
 
+  <!-- MAIN CONTENT -->
+  <main class="flex flex-col items-center w-full text-body2">
 
-<main class="flex flex-col items-center bg-white text-gray-800 w-full px-4">
-  <!-- Banner Image -->
-  <div
-    class="w-full max-w-[1442px] h-[394px] bg-[url('images/patients_hero.jpg')] bg-center bg-cover bg-no-repeat mb-10"
-    role="img"
-    aria-label="Patients Banner"
-  ></div>
+    <!-- Banner Image -->
+    <img 
+      src="images/patients_hero.jpg" 
+      alt="Patients Banner" 
+      class="w-full max-w-[1442px] h-auto mb-10 object-cover"
+    />
 
-  <!-- Content Wrapper -->
-  <div class="w-full max-w-4xl">
+    <!-- Content Wrapper -->
+    <div class="w-full max-w-[1360px] px-6">
 
-    <!-- Row 1: CareCloud Title -->
-    <h1 class="text-4xl font-bold mt-10 mb-4">CareCloud</h1>
+      <!-- Portal Description -->
+      <div>
+        <h2 class="text-headings font-bold mb-4">CareCloud</h2>
+        <p class="mb-4">
+          Your health information is now available in MyCare — our advanced patient portal!<br>
+          MyCare offers secure, 24/7 access to your personal health records in one convenient place.
+          From test results to appointment details, everything you need is at your fingertips in a unified electronic medical record.
+        </p>
+      </div>
 
-    <!-- Row 2: Portal Description -->
-    <div>
-      <h2 class="text-xl font-semibold mb-2"></h2>
-      <p class="mb-2">
-        Your health information is now available in MyCare — our advanced patient portal!
-      </p>
-      <p>
-        MyCare offers secure, 24/7 access to your personal health records in one convenient place.
-        From test results to appointment details, everything you need is at your fingertips in a unified electronic medical record.
-      </p>
-    </div>
+      <!-- New & Existing Patient Buttons -->
+      <div class="flex flex-wrap gap-14 mt-10">
+        <a href="https://carecloud.com/app/" target="_blank" rel="noopener noreferrer"
+           class="font-bold underline text-headings bg-grassgreen text-white px-10 py-3 rounded hover:bg-grassgreen">
+          New Patient
+        </a>
+        <a href="https://carecloud.com/app/" target="_blank" rel="noopener noreferrer"
+           class="font-bold underline text-headings bg-grassgreen text-white px-6 py-3 rounded hover:bg-grassgreen">
+          Existing Patient
+        </a>
+      </div>
 
-    <!-- Row 3: Buttons -->
-    <div class="flex flex-wrap gap-4 mt-6">
-      <a href="https://carecloud.com/app/" target="_blank" rel="noopener noreferrer"
-         class="bg-green-700 text-white px-6 py-2 rounded hover:bg-green-800">
-        New Patient
-      </a>
-      <a href="https://carecloud.com/app/" target="_blank" rel="noopener noreferrer"
-         class="bg-green-700 text-white px-6 py-2 rounded hover:bg-green-800">
-        Existing Patient
-      </a>
-    </div>
+      <!-- What is CareCloud? -->
+      <h2 class="text-headings font-bold mt-14">What is CareCloud?</h2>
 
-      <!-- Row 4: What is CareCloud? -->
-      <h2 class="text-2xl font-bold mt-10">What is CareCloud?</h2>
-
-      <!-- Row 5: Features -->
-      <div class="mt-2 max-w-4xl">
+      <!-- Features -->
+      <div class="mt-4">
         <p class="mb-2">
           CareCloud offers patients personalized and secure online access to portions of their medical records.
           It allows you to safely use the internet to manage and receive important health information.
         </p>
         <p class="mb-2">With CareCloud, you can:</p>
-        <ul class="list-disc list-inside space-y-1">
+        <ul class="list-disc list-inside pl-5 space-y-1">
           <li>Request medical appointments</li>
           <li>View your health summary</li>
           <li>Access test results</li>
@@ -123,24 +108,20 @@
         </ul>
       </div>
 
-      <!-- Row 6: Is there a fee? -->
-      <h2 class="text-2xl font-bold mt-10">Is there a fee?</h2>
-
-      <!-- Row 7: Free Service -->
-      <div class="mt-2 max-w-4xl">
+      <!-- Fee Section -->
+      <h2 class="text-headings font-bold mt-10">Is there a fee?</h2>
+      <div class="mt-4">
         <p>CareCloud is a free service offered to our patients.</p>
       </div>
 
-      <!-- Row 8: Questions -->
-      <h2 class="text-2xl font-bold mt-10">Have Questions About CareCloud? We’re Here to Help.</h2>
-
-      <!-- Row 9: Contact Info -->
-      <div class="mt-2 max-w-4xl">
+      <!-- Questions Section -->
+      <h2 class="text-headings font-medium mt-10">Have Questions About CareCloud? We’re Here to Help.</h2>
+      <div class="mt-4">
         <p>
-          <strong>Whom do I contact if I have further questions?</strong><br />
+          Whom do I contact if I have further questions?<br />
           If you have technical questions about using CareCloud, please contact our support team at
-          <a href="mailto:patient-first@ntdimaging.com" class="text-green-600 underline">patient-first@ntdimaging.com</a>
-          or call NTDI Patient Support at <a href="tel:9726814000" class="text-green-600 underline">972-681-4000</a>.
+          <a href="mailto:patient-first@ntdimaging.com" class="hover:text-grassgreen hover:underline">patient-first@ntdimaging.com</a>
+          or call NTDI Patient Support at <a href="tel:9726814000" class="hover:text-grassgreen hover:underline">972-681-4000</a>.
         </p>
         <p class="mt-2">
           For questions about your medical records or care, please reach out directly to your provider’s office.
@@ -148,11 +129,9 @@
         </p>
       </div>
 
-      <!-- Row 10: What to Know -->
-      <h2 class="text-2xl font-bold mt-10">What to Know Before Your Appointment</h2>
-
-      <!-- Row 11: Prep Text -->
-      <div class="mt-2 max-w-4xl">
+      <!-- What to Know Before Appointment -->
+      <h2 class="text-headings font-bold mt-10">What to Know Before Your Appointment</h2>
+      <div class="mt-4">
         <p>
           We are glad that you have chosen to visit our website and choose our facility for your tests.
           Click on the following links to print out the required documents for your visit. Bring these documents and your prescription
@@ -160,23 +139,34 @@
         </p>
       </div>
 
-      <!-- Rows 12-14: PDFs -->
-      <div class="mt-6 max-w-4xl space-y-4">
-        <a href="docs/patient_paperwork.pdf" download class="flex items-center text-green-700 hover:underline">
-          <img src="icons/pdf_icon.gif" alt="PDF" class="w-6 h-6 mr-2" />
+      <!-- Downloadable PDFs -->
+      <div class="mt-6 space-y-4">
+        <a href="docs/patient_paperwork.pdf" download class="flex items-center hover:text-grassgreen hover:underline">
+          <img src="icons/pdf_icon.gif" alt="PDF" class="w-12 h-12 mr-2" />
           Please Download the Patient Paperwork to bring to your first appointment.
         </a>
-        <a href="docs/mri_patient_form.pdf" download class="flex items-center text-green-700 hover:underline">
-          <img src="icons/pdf_icon.gif" alt="PDF" class="w-6 h-6 mr-2" />
+        <a href="docs/mri_patient_form.pdf" download class="flex items-center hover:text-grassgreen hover:underline">
+          <img src="icons/pdf_icon.gif" alt="PDF" class="w-12 h-12 mr-2" />
           Download MRI Patient Form.
         </a>
-        <a href="docs/partial_insurance_list.pdf" download class="flex items-center text-green-700 hover:underline">
-          <img src="icons/pdf_icon.gif" alt="PDF" class="w-6 h-6 mr-2" />
+        <a href="docs/partial_insurance_list.pdf" download class="flex items-center hover:text-grassgreen hover:underline">
+          <img src="icons/pdf_icon.gif" alt="PDF" class="w-12 h-12 mr-2" />
           Partial list of our Insurance and Networks accepted by our radiologist.
         </a>
       </div>
+
     </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-softgrey relative h-[61px] mb-[25px] mt-[25px]">
+  <div class="max-w-[1360px] mx-auto px-6 h-full flex items-end">
+    <h3 class="text-body1 text-grassgreen leading-none mb-[.5%]">
+      NORTH TEXAS DIGITAL IMAGING &copy; 2010 |
+      <a class="underline" href="privacy.html">PRIVACY POLICY</a>
+    </h3>
   </div>
-</main>
+</footer>
+
 </body>
 </html>
