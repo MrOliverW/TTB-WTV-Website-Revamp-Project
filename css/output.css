@@ -529,6 +529,9 @@
   .text-\(length\:--font-size-body1\) {
     font-size: var(--font-size-body1);
   }
+  .text-\(length\:--font-size-body2\) {
+    font-size: var(--font-size-body2);
+  }
   .text-\(length\:--font-size-headings\) {
     font-size: var(--font-size-headings);
   }
