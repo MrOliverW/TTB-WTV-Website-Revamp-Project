@@ -9,79 +9,88 @@
     />
     <link href="./css/output.css" rel="stylesheet" />
 
-    <title>North Texas Digital Imaging</title>
+    <title>Contact</title>
   </head>
 
   <body>
-    <nav
-      class="text-headings flex items-center justify-between px-6 py-4 bg-white"
-    >
-      <!-- Logo -->
-      <div class="flex items-center space-x-2">
-        <img src="./icons/NTDI_LOGO.jpg" alt="Logo" class="h-8 w-auto" />
-        <div class="flex flex-col item-center text-center">
-          <span class="text-headings font-roboto text-green-700"
-            >NORTH TEXAS</span
-          >
-          <span class="text-headings font-roboto font-black text-black-700"
-            >DIGITAL IMAGING</span
-          >
+    <!-- NAVIGATION -->
+    <nav class="bg-white py-4">
+      <div class="nav-container flex items-center justify-between px-6">
+        <!-- Logo Section -->
+        <div class="flex items-center gap-4 md:ml-[41px]">
+          <img
+            src="./images/ntdi_logo.png"
+            alt="Logo"
+            class="logo-img h-12 w-auto"
+          />
+          <div class="flex flex-col justify-center -ml-5">
+            <span
+              class="logo-text text-(length:--font-size-body1) font-roboto text-grassgreen -mb-1"
+              >NORTH TEXAS</span
+            >
+            <span
+              class="logo-text text-(length:--font-size-body1) font-roboto font-black text-black -mt-1"
+              >DIGITAL IMAGING</span
+            >
+          </div>
         </div>
+
+        <!-- Navigation Links -->
+        <ul
+          class="nav-links hidden md:flex text-(length:--font-size-body2) text-body1 text-black space-x-6"
+        >
+          <li><a href="index.html" class="hover:text-grassgreen">Home</a></li>
+          <li><a href="about.html" class="hover:text-grassgreen">About</a></li>
+          <li>
+            <a href="services.html" class="hover:text-grassgreen">Services</a>
+          </li>
+          <li>
+            <a href="technology.html" class="hover:text-grassgreen"
+              >Technology</a
+            >
+          </li>
+          <li>
+            <a href="patients.html" class="hover:text-grassgreen">Patients</a>
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-grassgreen">Contact Us</a>
+          </li>
+          <!-- Call Button -->
+          <li>
+            <a
+              href="tel:9726814000"
+              class="bg-grassgreen text-white text-(length:--font-size-body2) px-4 py-2 rounded-lg hover:bg-grassgreen transition text-body1"
+            >
+              (972) 681-4000
+            </a>
+          </li>
+        </ul>
       </div>
-
-      <!-- Nav Links -->
-      <ul
-        class="hidden md:flex font-roboto space-x-6 text-black-700 font-medium"
-      >
-        <li><a href="index.html" class="hover:text-green-700">Home</a></li>
-        <li><a href="about.html" class="hover:text-green-700">About</a></li>
-        <li>
-          <a href="services.html" class="hover:text-green-700">Services</a>
-        </li>
-        <li>
-          <a href="technology.html" class="hover:text-green-700">Technology</a>
-        </li>
-        <li>
-          <a href="patients.html" class="hover:text-green-700">Patients</a>
-        </li>
-        <li>
-          <a href="contact.html" class="hover:text-green-700">Contact Us</a>
-        </li>
-      </ul>
-
-      <!-- Call Button -->
-      <a
-        href="tel:9726814000"
-        class="ml-4 inline-block bg-green-700 text-white font-semibold px-4 py-2 rounded-lg hover:bg-green-800 transition"
-      >
-        (972) 681-4000
-      </a>
     </nav>
 
-    <hr class="border-3 border-green-700 mb-8" />
+    <!-- Divider -->
+    <hr class="border-3 border-grassgreen mb-8" />
 
     <!-- Breadcrumb -->
     <div
-      class="flex items-center space-x-2 text-headings font-bold text-black-700 px-6"
+      class="ml-6 md:ml-[68px] flex items-center space-x-2 text-black mb-10"
     >
-      <!-- Home Icon -->
-      <img src="icons/home.svg" alt="Home" class="h-6 w-6" />
-      <span class="font-black text-[var(--font-size-headings)]">&gt;</span>
-      <!-- or use a right arrow icon -->
-      <span>Contact Us</span>
+      <img src="icons/home.svg" alt="Home Icon" class="h-[25px] w-[24px]" />
+      <span class="text-[32px]">&gt;</span>
+      <span class="text-[20px]">Contact</span>
     </div>
 
 <!-- CONTACT HERO -->
 
-<div class="w-full overflow-hidden">
+<div class="relative w-full h-[450px] overflow-hidden mb-10">
   <img
-    src="./images/contact page hero image resized.jpg"
+    src="./images/contact_hero_1.jpg"
     alt="Support team assisting patients by phone"
-    class="w-full h-auto"
+    class="w-full h-auto object-center"
   />
 </div>
 
-<section class="bg-white px-6 md:px-[45px] pt-6 pb-6">
+<section class="bg-white px-6 md:px-[68px] pt-6 pb-6">
   <!-- Contact Us Header -->
   <h1 class="font-bold text-black text-[28px] leading-[33px] tracking-[-0.35px] mb-2">
       Contact Us
@@ -98,7 +107,7 @@
       Where to Find Us
   </h2>
       <hr class="border-0 h-0 w-[1345px] border-t border-solid border-[#D9D9D9] my-3" />
-      <div class="text-black text-[16px] leading-[20px] space-y-1">
+      <div class="text-black text-[24px] leading-[20px] space-y-1">
           <div>North Texas Digital Imaging</div>
           <div>1111 N Galloway Ave Suite 213</div>
           <div>Mesquite, TX 75149</div>
@@ -111,7 +120,7 @@
       Call Us
   </h2>
       <hr class="border-0 h-0 w-[1345px] border-t border-solid border-[#D9D9D9] my-3" />
-      <div class="text-black text-[16px] leading-[20px] space-y-2">
+      <div class="text-black text-[24px] leading-[20px] space-y-2">
           <div>Have a question or need to speak with someone?</div>
           <div><span class="font-bold">Phone:</span> 972-681-4000</div>
           <div><span class="font-bold">Fax:</span> 972-681-0681</div>
@@ -143,9 +152,9 @@
   </h2>
       <!-- <hr class="border-0 h-[1px] bg-[#D9D9D9] my-3" /> -->
       <hr class="border-0 h-0 w-[1345px] border-t border-solid border-[#D9D9D9] my-3" />
-      <div class="text-black text-[16px] leading-[20px] space-y-2">
-          <div><span class="font-bold">Monday – Friday:</span> 8:00 AM – 5:00 PM</div>
-          <div><span class="font-bold">Saturday & Sunday:</span> Closed</div>
+      <div class="text-black text-[24px] leading-[20px] space-y-2">
+          <div><span>Monday – Friday:</span> 8:00 AM – 5:00 PM</div>
+          <div><span>Saturday & Sunday:</span> Closed</div>
           <div class="font-bold">Closed on all federal holidays</div>
       </div>
   </div>
@@ -153,12 +162,13 @@
 
 
   <!-- Footer -->
-       <footer class="bg-softgrey h-[61px] mb-[25px] mt-[25px]">
-        <h3 class="text-headings text-grassgreen pl-[25px] leading-[61px]">
-          NORTH TEXAS DIGITAL IMAGING &copy; 2010 |
-          <a class="underline" href="#">PRIVACY POLICY</a>
+  <footer class="bg-softgrey relative h-[61px] mb-[25px] mt-[25px]">
+      <div class="sm:pl-[68px] h-full">
+        <h3 class="text-sm sm:text-[20px] text-grassgreen text-center sm:text-left leading-[61px] whitespace-nowrap">
+          NORTH TEXAS DIGITAL IMAGING &copy; 2025 |
+          <a class="underline" href="privacy.html">PRIVACY POLICY</a>
         </h3>
-      </footer>
-    </body>
+      </div>
+    </footer>
   </html>
   

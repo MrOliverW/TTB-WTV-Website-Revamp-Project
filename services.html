@@ -1,69 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script>
-        tailwind.config = {
-        theme: {
-            extend: {
-                fontSize: {
-                        'headings': '1.75rem',
-                        'body1': '1.375rem',
-                        'body2': '1.5rem',
-                },
-                fontFamily: {
-                    roboto: ['Roboto', 'sans-serif'],
-                },
-                colors: {
-                    grassgreen: '#2A7A1B',
-                    softgrey: '#F6F4F4',
-                }
-            }
-        }
-        }
-    </script>
-    <title>Document</title>
-</head>
-<body>
-    <nav class=" text-headings flex items-center justify-between px-6 py-4 bg-white">
-        <!-- Logo -->
-        <div class="flex items-center space-x-2">
-            <img src="/logo.svg" alt="Logo" class="h-8 w-auto">
-            <div class="flex flex-col item-center text-center">
-                <span class="text-headings font-roboto text-green-700">NORTH TEXAS</span>
-                <span class="text-headings font-roboto font-black text-black-700">DIGITAL IMAGING</span>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts: Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS output -->
+    <link href="./css/output.css" rel="stylesheet" />
+
+    <title>Services</title>
+  </head>
+  <body class="font-(family-name:--font-family-roboto) bg-white text-black">
+    <!-- NAVIGATION -->
+    <nav class="bg-white py-4">
+      <div class="nav-container flex items-center justify-between px-6">
+        <!-- Logo Section -->
+        <div class="flex items-center gap-4 md:ml-[41px]">
+          <img
+            src="./images/ntdi_logo.png"
+            alt="Logo"
+            class="logo-img h-12 w-auto"
+          />
+          <div class="flex flex-col justify-center -ml-5">
+            <span
+              class="logo-text text-(length:--font-size-body1) font-roboto text-grassgreen -mb-1"
+              >NORTH TEXAS</span
+            >
+            <span
+              class="logo-text text-(length:--font-size-body1) font-roboto font-black text-black -mt-1"
+              >DIGITAL IMAGING</span
+            >
+          </div>
         </div>
 
-        <!-- Nav Links -->
-        <ul class="hidden md:flex font-roboto space-x-6 text-black-700 font-medium">
-            <li><a href="index.html" class="hover:text-green-700">Home</a></li>
-            <li><a href="about.html" class="hover:text-green-700">About</a></li>
-            <li><a href="services.html" class="hover:text-green-700">Services</a></li>
-            <li><a href="technology.html" class="hover:text-green-700">Technology</a></li>
-            <li><a href="patients.html" class="hover:text-green-700">Patients</a></li>
-            <li><a href="contact.html" class="hover:text-green-700">Contact Us</a></li>
+        <!-- Navigation Links -->
+        <ul
+          class="nav-links hidden md:flex text-(length:--font-size-body2) text-body1 text-black space-x-6"
+        >
+          <li><a href="index.html" class="hover:text-grassgreen">Home</a></li>
+          <li><a href="about.html" class="hover:text-grassgreen">About</a></li>
+          <li>
+            <a href="services.html" class="hover:text-grassgreen">Services</a>
+          </li>
+          <li>
+            <a href="technology.html" class="hover:text-grassgreen"
+              >Technology</a
+            >
+          </li>
+          <li>
+            <a href="patients.html" class="hover:text-grassgreen">Patients</a>
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-grassgreen">Contact Us</a>
+          </li>
+          <!-- Call Button -->
+          <li>
+            <a
+              href="tel:9726814000"
+              class="bg-grassgreen text-white text-(length:--font-size-body2) px-4 py-2 rounded-lg hover:bg-grassgreen transition text-body1"
+            >
+              (972) 681-4000
+            </a>
+          </li>
         </ul>
-
-        <!-- Call Button -->
-        <a href="tel:9726814000" class="ml-4 inline-block bg-green-700 text-white font-semibold px-4 py-2 rounded-lg hover:bg-green-800 transition">
-            (972) 681-4000
-        </a>
-        
+      </div>
     </nav>
 
-<hr class="border-3 border-green-700 mb-8">
+    <!-- Divider -->
+    <hr class="border-3 border-grassgreen mb-8" />
 
-<!-- Breadcrumb -->
-<div class="flex items-center space-x-2 text-headings font-bold text-black-700 px-6">
-  <!-- Home Icon -->
-  <img src="icons/home.svg" alt="Home" class="h-6 w-6">
-  <span class="font-black text-2xl">&gt;</span> <!-- or use a right arrow icon -->
-  <span>Services</span>
-</div>
+    <!-- Breadcrumb -->
+    <div
+      class="ml-6 md:ml-[68px] flex items-center space-x-2 text-black mb-10"
+    >
+      <img src="icons/home.svg" alt="Home Icon" class="h-[25px] w-[24px]" />
+      <span class="text-[32px]">&gt;</span>
+      <span class="text-[20px]">Services</span>
+    </div>
 
-</body>
+    <!-- Top Title Section -->
+    <div class="text-black flex justify-center">
+      <div class="px-6 md:px-[68px]">
+        <h1 class="text-(length:--font-size-headings) font-bold text-black mb-4">
+          Diagnostic Imaging Services You Can Trust
+        </h1>
+        <p class="text-(length:--font-size-body1)">
+          At North Texas Digital Imaging, we offer fast, accurate, and
+          affordable diagnostic services with patient comfort and convenience at
+          the center. Our board-certified radiologists provide high-quality
+          imaging with same-day appointment availability and exam reports
+          returned in 24 hours or less. With easy online access for physicians,
+          competitive cash pricing, and flexible payment options.
+        </p>
+      </div>
+    </div>
+
+    <!-- Services Grid -->
+    <div
+      class="text-body2 grid grid-cols-1 md:grid-cols-2 gap-x-[180px] gap-y-6 px-6 md:px-[68px] pt-10 w-full"
+    >
+      <!-- Service Card: CT Scan -->
+      <div class="w-full">
+        <div class="relative w-full h-[336px] overflow-hidden">
+          <img
+            src="./images/ct_scan_1.jpg"
+            alt="CT Scan machine"
+            class="absolute w-full h-full object-top"
+          />
+          <div
+            class="absolute bottom-0 w-full h-[63px] bg-grassgreen text-white text-(length:--font-size-headings) font-semibold px-4 flex items-center"
+          >
+            CT Scan
+          </div>
+        </div>
+        <p class="text-(length:--font-size-body1) mt-2 text-black">
+          This imaging test provides clear, cross-sectional views of the body to
+          detect internal injuries, illnesses, or abnormalities.
+        </p>
+      </div>
+
+      <!-- Service Card: DEXA -->
+      <div class="w-full">
+        <div class="relative w-full h-[336px] overflow-hidden">
+          <img
+            src="./images/dexa_scan_1.jpg"
+            alt="DEXA bone density scan"
+            class="absolute top-0 left-0 w-full h-full object-top"
+          />
+          <div
+            class="absolute bottom-0 w-full h-[63px] bg-grassgreen text-white text-(length:--font-size-headings) font-semibold px-4 flex items-center"
+          >
+            DEXA Bone Densitometry
+          </div>
+        </div>
+        <p class="text-(length:--font-size-body1) mt-2 text-black">
+          This quick, low-dose X-ray measures bone strength and helps detect
+          osteoporosis or risk of fractures.
+        </p>
+      </div>
+
+      <!-- Service Card: MRI -->
+      <div class="w-full">
+        <div class="relative w-full h-[336px] overflow-hidden">
+          <img
+            src="./images/mri_1.jpg"
+            alt="MRI machine"
+            class="absolute top-0 left-0 w-full h-full object-top"
+          />
+          <div
+            class="absolute bottom-0 w-full h-[63px] bg-grassgreen text-white text-(length:--font-size-headings) font-semibold px-4 flex items-center"
+          >
+            MRI
+          </div>
+        </div>
+        <p class="text-(length:--font-size-body1) mt-2 text-black">
+          This scan uses magnetic fields and radio waves to create detailed
+          images of soft tissues, joints, and organs—without radiation.
+        </p>
+      </div>
+
+      <!-- Service Card: Ultrasound -->
+      <div class="w-full">
+        <div class="relative w-full h-[335px] overflow-hidden">
+          <img
+            src="./images/ultrasound_1.jpg"
+            alt="Ultrasound machine"
+            class="absolute top-0 left-0 w-full h-full object-top"
+          />
+          <div
+            class="absolute bottom-0 w-full h-[63px] bg-grassgreen text-white text-(length:--font-size-headings) font-semibold px-4 flex items-center"
+          >
+            Ultrasound
+          </div>
+        </div>
+        <p class="text-(length:--font-size-body1) mt-2 text-black">
+          A safe, radiation-free test that uses sound waves to capture real-time
+          images of organs, blood flow, and soft tissues.
+        </p>
+      </div>
+
+      <!-- Service Card: X-RAY -->
+      <div class="w-full">
+        <div class="relative w-full h-[335px] overflow-hidden">
+          <img
+            src="./images/xray_1.jpg"
+            alt="X-ray imaging"
+            class="absolute top-0 left-0 w-full h-full md:object-top"
+          />
+          <div
+            class="absolute bottom-0 w-full h-[63px] bg-grassgreen text-white text-(length:--font-size-headings) font-semibold px-4 flex items-center"
+          >
+            X-RAY
+          </div>
+        </div>
+        <p class="text-(length:--font-size-body1) mt-2 text-black">
+          An X-ray scan is a medical imaging technique used to view the inside
+          of the body, helping to diagnose injuries, infections, or conditions
+          affecting bones and tissues.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-softgrey relative h-[61px] mb-[25px] mt-[25px]">
+      <div class="sm:pl-[68px] h-full">
+        <h3 class="text-sm sm:text-[20px] text-grassgreen text-center sm:text-left leading-[61px] whitespace-nowrap">
+          NORTH TEXAS DIGITAL IMAGING &copy; 2025 |
+          <a class="underline" href="privacy.html">PRIVACY POLICY</a>
+        </h3>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -11,3 +11,108 @@
   --color-grassgreen: #2A7A1B;
   --color-softgrey: #F6F4F4;
 }
+
+@layer utilities {
+  /* Above 1320px: horizontal nav */
+  @media (min-width: 1320px) {
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    .logo-section {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex !important;
+      flex-direction: row;
+      gap: 1.5rem; /* Adjust spacing */
+    }
+
+    .phone-button {
+      align-self: center;
+    }
+  }
+
+  /* Below 1320px: stack vertically */
+  @media (max-width: 1319px) {
+    .nav-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem; /* Space between logo/nav/phone */
+    }
+
+    .logo-section {
+      flex-direction: row; /* Keep logo image and text in one row */
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex !important;
+      flex-direction: column;
+      gap: 0.75rem; /* Vertical spacing */
+      width: 100%;
+    }
+
+    .phone-button {
+      align-self: flex-start;
+      width: auto; /* Do not stretch */
+    }
+  }
+
+   /* SERVICES GRID */
+  @media (min-width: 1320px) {
+    .services-grid {
+      display: grid;
+      /* grid-template-columns: repeat(2, 598px); fixed column width */
+      justify-content: space-between;
+      /* gap: 2rem; */
+    }
+  }
+
+  @media (max-width: 1319px) {
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+
+  .logo-img {
+    height: 4.5rem;
+    width: auto;
+  }
+
+  .logo-text {
+    text-align: center;
+  }
+
+  /* Custom utilities for text sizes */
+
+  /* Headings */
+  .text-headings {
+    font-size: 1.75rem; /* 28px */
+    line-height: 1.2;   /* adjust if needed */
+  }
+
+  /* Body 1: nav links, buttons */
+  .text-body1 {
+    font-size: 1.375rem; /* 22px */
+    line-height: 1.4;
+  }
+
+  /* Body 2: general body text */
+  .text-body2 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.5;
+  }
+}
+
+
+
