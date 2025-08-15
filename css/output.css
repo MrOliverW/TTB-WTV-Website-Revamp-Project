@@ -716,6 +716,9 @@
     --tw-tracking: -0.35px;
     letter-spacing: -0.35px;
   }
+  .whitespace-nowrap {
+    white-space: nowrap;
+  }
   .text-\[var\(--font-size-body2\)\] {
     color: var(--font-size-body2);
   }
