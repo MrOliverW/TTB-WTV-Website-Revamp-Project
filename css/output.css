@@ -282,9 +282,6 @@
   .table {
     display: table;
   }
-  .aspect-\[3\/2\] {
-    aspect-ratio: 3/2;
-  }
   .h-0 {
     height: calc(var(--spacing) * 0);
   }
@@ -314,9 +311,6 @@
   }
   .h-\[336px\] {
     height: 336px;
-  }
-  .h-\[336x\] {
-    height: 336x;
   }
   .h-\[536px\] {
     height: 536px;
@@ -356,12 +350,6 @@
   }
   .max-w-xl {
     max-width: var(--container-xl);
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .list-inside {
     list-style-position: inside;
@@ -461,10 +449,6 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-0 {
     border-style: var(--tw-border-style);
     border-width: 0px;
@@ -489,9 +473,6 @@
   }
   .bg-\[\#D9D9D9\] {
     background-color: #D9D9D9;
-  }
-  .bg-black {
-    background-color: var(--color-black);
   }
   .bg-black\/40 {
     background-color: color-mix(in srgb, #000 40%, transparent);
@@ -525,12 +506,6 @@
   }
   .object-cover {
     object-fit: cover;
-  }
-  .object-scale-down {
-    object-fit: scale-down;
-  }
-  .object-center {
-    object-position: center;
   }
   .object-top {
     object-position: top;
@@ -693,10 +668,6 @@
   }
   .underline {
     text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
@@ -910,11 +881,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -924,7 +890,6 @@
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
     }
   }
 }
