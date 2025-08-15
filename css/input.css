@@ -69,9 +69,9 @@
   @media (min-width: 1320px) {
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(2, 598px); /* fixed column width */
+      /* grid-template-columns: repeat(2, 598px); fixed column width */
       justify-content: space-between;
-      gap: 2rem;
+      /* gap: 2rem; */
     }
   }
 
