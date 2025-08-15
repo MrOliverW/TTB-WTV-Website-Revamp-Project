@@ -447,6 +447,9 @@
   .gap-x-12 {
     column-gap: calc(var(--spacing) * 12);
   }
+  .gap-x-\[108px\] {
+    column-gap: 108px;
+  }
   .gap-x-\[180px\] {
     column-gap: 180px;
   }
@@ -714,6 +717,12 @@
   }
   .whitespace-nowrap {
     white-space: nowrap;
+  }
+  .text-\(leading\:--font-size-body1\) {
+    color: var(--font-size-body1);
+  }
+  .text-\(leading\:--font-size-headings\) {
+    color: var(--font-size-headings);
   }
   .text-black {
     color: var(--color-black);
