@@ -2,7 +2,7 @@
 This repository serves as the codebase for the WTV Website Revamp project in partnership with Tech Talent Boost
 
 GitHub Pages (Main branch) preview: https://mroliverw.github.io/TTB-WTV-Website-Revamp-Project/
-https://mroliverw.github.io/TTB-WTV-Website-Revamp-Project/services.html
+https://mroliverw.github.io/TTB-WTV-Website-Revamp-Project/index.html
 
 WTV Website Revamp Project Scope
 Current website: https://ntdimaging.com/
